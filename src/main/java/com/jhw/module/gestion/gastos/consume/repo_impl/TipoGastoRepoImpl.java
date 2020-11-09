@@ -18,6 +18,6 @@ import com.jhw.utils.spring.client.ConsumerRepoTemplate;
 public class TipoGastoRepoImpl extends ConsumerRepoTemplate<TipoGastoDomain> implements TipoGastoUseCase {
 
     public TipoGastoRepoImpl() {
-        super(RESTHandler.restTemplate(), TipoGastoDomain.class, RESTHandler.urlActualREST() + GASTOS_GENERAL_PATH);
+        super(RESTHandler.restTemplate(), TipoGastoDomain.class, RESTHandler.urlActualREST() + TIPO_GASTO_GENERAL_PATH);
     }
 }
