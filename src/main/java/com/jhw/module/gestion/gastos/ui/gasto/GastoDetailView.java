@@ -13,6 +13,7 @@ import com.jhw.module.gestion.gastos.ui.report.export.GastoExport;
 import com.jhw.swing.material.components.button._MaterialButtonPopup;
 import com.jhw.swing.models.clean.CleanDetailCRUDDragDrop;
 import com.jhw.swing.models.input.panels.ModelPanel;
+import com.jhw.utils.others.DTF;
 import com.jhw.utils.others.SDF;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -65,7 +66,7 @@ public class GastoDetailView extends CleanDetailCRUDDragDrop<GastoDomain> {
         return new Object[]{
             obj.getTipoGastoFk(),
             MoneyTableComponent.from(obj.getValor(), obj.getMonedaFk()),
-            SDF.SDF.format(obj.getCuadreFk().info().getFecha()),
+            DTF.LOCAL_DATE_FORMATTER.format(obj.getCuadreFk().info().getFecha()),
             obj.getCuadreFk().getOperacionContableFk().getCuentaFk()};
     }
 
