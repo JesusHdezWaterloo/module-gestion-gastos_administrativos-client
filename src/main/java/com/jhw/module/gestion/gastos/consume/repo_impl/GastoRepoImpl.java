@@ -11,8 +11,10 @@ import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.core.usecase_def.GastoUseCase;
 import com.jhw.module.util.rest_config.services.RESTHandler;
 import com.jhw.utils.spring.client.ConsumerRepoTemplate;
+import com.jhw.utils.spring.client.RestTemplateUtils;
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  *
@@ -26,24 +28,12 @@ public class GastoRepoImpl extends ConsumerRepoTemplate<GastoDomain> implements 
 
     @Override
     public HashMap<TipoGastoDomain, BigDecimal> reporteGastadoPorGasto() throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    /*
-    @Override
-    public List<CuadreDomain> findAllPending() throws Exception {
-        return RestTemplateUtils.getForList(template, urlGeneral + CUADRE_FIND_ALL_PENDING_PATH, CuadreDomain.class);
+        return (HashMap<TipoGastoDomain, BigDecimal>) RestTemplateUtils.getForMap(template, urlGeneral + GASTO_REPORTE_POR_TIPO_PATH, TipoGastoDomain.class, BigDecimal.class);
+        //return null;
     }
 
-    @Override
-    public List<CuadreDomain> findAllLiquidadas() throws Exception {
-        return RestTemplateUtils.getForList(template, urlGeneral + CUADRE_FIND_ALL_LIQUIDADAS_PATH, CuadreDomain.class);
+    public List<Integer> findAllPending() throws Exception {
+        return RestTemplateUtils.getForList(template, urlGeneral, Integer.class);
     }
 
-    @Override
-    public List<CuadreDomain> findByLiquidada(boolean liquidada) throws Exception {
-        Map<String, Object> map = new HashMap<>();
-        map.put(LIQUIDADA, liquidada);
-        return RestTemplateUtils.getForList(template, urlGeneral + CUADRE_FIND_BY_LIQUIDADA_PATH, map, CuadreDomain.class);
-    }
-     */
 }
