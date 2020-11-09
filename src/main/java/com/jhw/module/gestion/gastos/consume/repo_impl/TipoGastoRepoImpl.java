@@ -6,6 +6,8 @@
 package com.jhw.module.gestion.gastos.consume.repo_impl;
 
 import static com.jhw.module.gestion.gastos.core.ModuleGestionGastosConstants.*;
+import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
+import com.jhw.module.gestion.gastos.core.usecase_def.TipoGastoUseCase;
 import com.jhw.module.util.rest_config.services.RESTHandler;
 import com.jhw.utils.spring.client.ConsumerRepoTemplate;
 
@@ -13,10 +15,9 @@ import com.jhw.utils.spring.client.ConsumerRepoTemplate;
  *
  * @author Jesus Hernandez Barrios (jhernandezb96@gmail.com)
  */
-public class InfoOperacionContableRepoImpl extends ConsumerRepoTemplate<InfoOperacionContableDomain> implements InfoOperacionContableUseCase {
+public class TipoGastoRepoImpl extends ConsumerRepoTemplate<TipoGastoDomain> implements TipoGastoUseCase {
 
-    public InfoOperacionContableRepoImpl() {
-        super(RESTHandler.restTemplate(), InfoOperacionContableDomain.class, RESTHandler.urlActualREST() + INFO_OP_CONTABLE_GENERAL_PATH);
+    public TipoGastoRepoImpl() {
+        super(RESTHandler.restTemplate(), TipoGastoDomain.class, RESTHandler.urlActualREST() + GASTOS_GENERAL_PATH);
     }
-
 }

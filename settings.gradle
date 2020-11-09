@@ -54,8 +54,8 @@ project(':module-util-rest_config').projectDir = "E:\\Trabajos\\Projects\\GIT Pr
 include ':module-gestion-gastos_administrativos-standard'
 project(':module-gestion-gastos_administrativos-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-gastos_administrativos-standard" as File
 
-include ':module-gestion-contabilidad_empresarial-server'
-project(':module-gestion-contabilidad_empresarial-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-server" as File
+include ':module-gestion-contabilidad_empresarial-client'
+project(':module-gestion-contabilidad_empresarial-client').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-client" as File
 
 include ':module-gestion-contabilidad_empresarial-standard'
 project(':module-gestion-contabilidad_empresarial-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-standard" as File

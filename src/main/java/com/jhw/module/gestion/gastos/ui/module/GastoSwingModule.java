@@ -8,9 +8,7 @@ import com.jhw.module.gestion.gastos.core.module.GastoCoreModule;
 import com.jhw.module.gestion.gastos.core.usecase_def.GastoUseCase;
 import com.jhw.module.gestion.gastos.core.usecase_def.TipoGastoUseCase;
 import com.jhw.module.gestion.gastos.repo.module.GastoRepoModule;
-import com.jhw.module.gestion.gastos.repo.utils.ResourcesGastos;
 import com.jhw.module.gestion.gastos.ui.GastosMainPanel;
-import com.jhw.module.util.mysql.services.MySQLHandler;
 import com.jhw.swing.material.components.taskpane.SingleCollapseMenu;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
@@ -71,8 +69,4 @@ public class GastoSwingModule extends DefaultAbstractSwingMainModule {
         navigator.navigateTo(string, o);
     }
 
-    @Override
-    public void closeModule() {
-        MySQLHandler.save(ResourcesGastos.SCHEMA);
-    }
 }

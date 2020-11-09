@@ -9,21 +9,21 @@ import com.google.inject.Injector;
  *
  * @author Jesus Hernandez Barrios (jhernandezb96@gmail.com)
  */
-public class ContabilidadConsumeCoreModule extends DefaultAbstractModule {
+public class GastosConsumeCoreModule extends DefaultAbstractModule {
 
-    private final Injector inj = Guice.createInjector(new ContabilidadConsumeCoreInjectionConfig());
+    private final Injector inj = Guice.createInjector(new GastosConsumeCoreInjectionConfig());
 
-    private static ContabilidadConsumeCoreModule INSTANCE;
+    private static GastosConsumeCoreModule INSTANCE;
 
-    public static ContabilidadConsumeCoreModule getInstance() {
+    public static GastosConsumeCoreModule getInstance() {
         if (INSTANCE == null) {
             throw new NullPointerException("El modulo de Contabilidad_Empresarial Consume-Core no se ha inicializado");
         }
         return INSTANCE;
     }
 
-    public static ContabilidadConsumeCoreModule init() {
-        INSTANCE = new ContabilidadConsumeCoreModule();
+    public static GastosConsumeCoreModule init() {
+        INSTANCE = new GastosConsumeCoreModule();
         return getInstance();
     }
 
