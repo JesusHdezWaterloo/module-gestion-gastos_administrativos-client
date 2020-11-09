@@ -26,7 +26,7 @@ public class MainTest {
         GastoSwingModule.init();
         
         System.out.println("antes");
-        System.out.println(GastoSwingModule.gastoUC.findAll());
+        System.out.println(GastoSwingModule.gastoUC.reporteGastadoPorGasto().keySet().iterator().next().getNombreGasto());
         System.out.println("ya");
     }
 }
