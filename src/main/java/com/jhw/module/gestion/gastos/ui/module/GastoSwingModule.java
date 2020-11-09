@@ -4,10 +4,9 @@ import com.clean.swing.app.AbstractSwingApplication;
 import com.clean.swing.app.DefaultAbstractSwingMainModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
-import com.jhw.module.gestion.gastos.core.module.GastoCoreModule;
+import com.jhw.module.gestion.gastos.consume.module.GastosConsumeCoreModule;
 import com.jhw.module.gestion.gastos.core.usecase_def.GastoUseCase;
 import com.jhw.module.gestion.gastos.core.usecase_def.TipoGastoUseCase;
-import com.jhw.module.gestion.gastos.repo.module.GastoRepoModule;
 import com.jhw.module.gestion.gastos.ui.GastosMainPanel;
 import com.jhw.swing.material.components.taskpane.SingleCollapseMenu;
 import java.awt.event.ActionEvent;
@@ -21,10 +20,10 @@ public class GastoSwingModule extends DefaultAbstractSwingMainModule {
     public final static TipoGastoUseCase tipoGastoUC;
 
     static {
-        GastoCoreModule.init(GastoRepoModule.init());
+        GastosConsumeCoreModule.init();
 
-        gastoUC = GastoCoreModule.getInstance().getImplementation(GastoUseCase.class);
-        tipoGastoUC = GastoCoreModule.getInstance().getImplementation(TipoGastoUseCase.class);
+        gastoUC = GastosConsumeCoreModule.getInstance().getImplementation(GastoUseCase.class);
+        tipoGastoUC = GastosConsumeCoreModule.getInstance().getImplementation(TipoGastoUseCase.class);
     }
 
     private GastoSwingModule() {

@@ -30,7 +30,12 @@ public class GastosByTipoChart extends _MaterialBarChart implements Update {
             for (Map.Entry<TipoGastoDomain, BigDecimal> entry : h.entrySet()) {
                 addBar(entry.getValue(), 0, entry.getKey().getNombreGasto());
             }
-            this.getChart().setTitle("Gastos Realizados por tipo (Conversión a: " + MonedaHandler.getMonedaBase() + ")");
+            if (h.isEmpty()) {
+                this.getChart().setTitle("No hay gastos para mostrar ");
+            } else {
+                String moneda = h.keySet().iterator().next().getMonedaDefectoFk().getNombreMoneda();
+                this.getChart().setTitle("Gastos Realizados por tipo (Conversión a: " + moneda + ")");
+            }
         } catch (Exception ex) {
             ExceptionHandler.handleException(ex);
         }

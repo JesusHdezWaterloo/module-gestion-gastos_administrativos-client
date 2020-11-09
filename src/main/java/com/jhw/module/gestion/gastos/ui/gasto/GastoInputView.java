@@ -13,6 +13,7 @@ import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;
 import com.jhw.module.gestion.gastos.ui.tipo_gasto.TipoGastoICBS;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
 import com.jhw.swing.models.clean.CleanCRUDInputView;
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -123,7 +124,7 @@ public class GastoInputView extends CleanCRUDInputView<GastoDomain> {
     }
 
     private void setTipoGasto(TipoGastoDomain tipo) {
-        fechaDescInputView.setObject(new FechaDescUI(new Date(), tipo.getFormaPagoFk(), tipo.getDescripcion()));
+        fechaDescInputView.setObject(new FechaDescUI(LocalDate.now(), tipo.getFormaPagoFk(), tipo.getDescripcion()));
         docNombreInputView.setObject(new DocNombreUI("Pago de " + tipo.getNombreGasto(), ""));
 
         operacionInputView.getMoneda().setObject(tipo.getMonedaDefectoFk());

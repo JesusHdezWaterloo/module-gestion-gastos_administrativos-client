@@ -5,7 +5,7 @@
  */
 package com.jhw.module.gestion.gastos;
 
-import com.jhw.module.gestion.gastos.ui.module.ContabilidadSwingModule;
+import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;
 import com.jhw.module.util.default_config.DefaultConfigSwingModule;
 import com.jhw.module.util.personalization.ui.module.PersonalizationSwingModule;
 import com.jhw.swing.ui.MaterialLookAndFeel;
@@ -23,10 +23,10 @@ public class MainTest {
         PersonalizationSwingModule.init();
         DefaultConfigSwingModule.init();
 
-        ContabilidadSwingModule.init();
+        GastoSwingModule.init();
         
         System.out.println("antes");
-        System.out.println(ContabilidadSwingModule.cuadreUC.findAll());
+        System.out.println(GastoSwingModule.gastoUC.findAll());
         System.out.println("ya");
     }
 }
