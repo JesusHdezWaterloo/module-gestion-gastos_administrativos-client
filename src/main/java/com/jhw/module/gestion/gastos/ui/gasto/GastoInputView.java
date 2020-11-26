@@ -63,7 +63,7 @@ public class GastoInputView extends CleanCRUDInputView<GastoDomain> {
         vlc.add(fechaDescInputView, true);
 
         this.setComponent(vlc.build());
-        
+
         operacionInputView.getTipoOperICBS().setEnabled(false);
     }
 
@@ -81,12 +81,15 @@ public class GastoInputView extends CleanCRUDInputView<GastoDomain> {
             setHeader("Crear Gasto");
         } else {
             setHeader("Editar Gasto");
-            docNombreInputView.setObject(new DocNombreUI(getOldModel().getCuadreFk().info()));
+            tipoGastoICBS.setObject(getOldModel().getTipoGastoFk());
+            
             fechaDescInputView.setObject(new FechaDescUI(getOldModel().getCuadreFk().info()));
+            docNombreInputView.setObject(new DocNombreUI(getOldModel().getCuadreFk().info()));
 
             operacionInputView.setObject(new OperacionCuadreUI(getOldModel().getCuadreFk()));
             operacionInputView.getMoneda().setObject(getOldModel().getMonedaFk());
             operacionInputView.getTextFieldValor().setObject(getOldModel().getValor());
+
         }
     }
 
@@ -129,7 +132,7 @@ public class GastoInputView extends CleanCRUDInputView<GastoDomain> {
 
         operacionInputView.getMoneda().setObject(tipo.getMonedaDefectoFk());
         operacionInputView.setTipoOp(tipo.getTipoOperacionContableDefectoFk());
-        
+
         tipoGastoICBS.setObject(tipo);
     }
 
