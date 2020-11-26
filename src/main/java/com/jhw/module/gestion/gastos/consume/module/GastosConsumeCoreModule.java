@@ -17,14 +17,13 @@ public class GastosConsumeCoreModule extends DefaultAbstractModule {
 
     public static GastosConsumeCoreModule getInstance() {
         if (INSTANCE == null) {
-            throw new NullPointerException("El modulo de Contabilidad_Empresarial Consume-Core no se ha inicializado");
+            init();
         }
         return INSTANCE;
     }
 
-    public static GastosConsumeCoreModule init() {
+    private static void init() {
         INSTANCE = new GastosConsumeCoreModule();
-        return getInstance();
     }
 
     @Override

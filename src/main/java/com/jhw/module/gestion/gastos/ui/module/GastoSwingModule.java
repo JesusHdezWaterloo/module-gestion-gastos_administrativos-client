@@ -19,8 +19,6 @@ public class GastoSwingModule extends DefaultAbstractSwingMainModule {
     public final static TipoGastoUseCaseConsume tipoGastoUC;
 
     static {
-        GastosConsumeCoreModule.init();
-
         gastoUC = GastosConsumeCoreModule.getInstance().getImplementation(GastoUseCaseConsume.class);
         tipoGastoUC = GastosConsumeCoreModule.getInstance().getImplementation(TipoGastoUseCaseConsume.class);
     }
