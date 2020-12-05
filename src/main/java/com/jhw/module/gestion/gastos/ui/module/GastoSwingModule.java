@@ -4,8 +4,10 @@ import com.clean.swing.app.AbstractSwingApplication;
 import com.clean.swing.app.DefaultAbstractSwingMainModule;
 import com.clean.swing.app.dashboard.DashBoardSimple;
 import com.clean.swing.app.dashboard.DashboardConstants;
+import com.jhw.module.gestion.contabilidad.service.ResourceServiceImplementation;
 import com.jhw.module.gestion.gastos.consume.module.GastosConsumeCoreModule;
 import com.jhw.module.gestion.gastos.consume.usecase_def.*;
+import com.jhw.module.gestion.gastos.service.ResourceServiceClientImplementation;
 import com.jhw.module.gestion.gastos.ui.GastosMainPanel;
 import com.jhw.swing.material.components.taskpane.SingleCollapseMenu;
 import java.awt.event.ActionEvent;
@@ -19,8 +21,6 @@ public class GastoSwingModule extends DefaultAbstractSwingMainModule {
     public final static TipoGastoUseCaseConsume tipoGastoUC;
 
     static {
-        GastosConsumeCoreModule.init();
-
         gastoUC = GastosConsumeCoreModule.getInstance().getImplementation(GastoUseCaseConsume.class);
         tipoGastoUC = GastosConsumeCoreModule.getInstance().getImplementation(TipoGastoUseCaseConsume.class);
     }
@@ -30,6 +30,10 @@ public class GastoSwingModule extends DefaultAbstractSwingMainModule {
 
     public static GastoSwingModule init() {
         System.out.println("Iniciando 'Gastos'");
+
+        ResourceServiceClientImplementation.init();
+        ResourceServiceImplementation.init();
+
         return new GastoSwingModule();
     }
 
