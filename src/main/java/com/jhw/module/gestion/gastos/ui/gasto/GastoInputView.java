@@ -128,11 +128,11 @@ public class GastoInputView extends CleanCRUDInputView<GastoDomain> {
         fechaDescInputView.setObject(new FechaDescUI(LocalDate.now(), tipo.getFormaPagoFk(), tipo.getDescripcion()));
         docNombreInputView.setObject(new DocNombreUI("Pago de " + tipo.getNombreGasto(), "-"));
 
+        tipoGastoICBS.setObject(tipo);
+
         operacionInputView.getMoneda().setObject(tipo.getMonedaDefectoFk());
         operacionInputView.setTipoOp(tipo.getTipoOperacionContableDefectoFk());
         operacionInputView.getTipoOperICBS().setEnabled(false);
-        
-        tipoGastoICBS.setObject(tipo);
     }
 
 }
