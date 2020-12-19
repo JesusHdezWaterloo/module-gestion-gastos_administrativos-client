@@ -15,6 +15,7 @@ import com.jhw.utils.spring.client.RestTemplateUtils;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
+import org.springframework.web.client.RestOperations;
 
 /**
  *
@@ -23,17 +24,22 @@ import java.util.List;
 public class GastoRepoImpl extends ConsumerRepoTemplate<GastoDomain> implements GastoUseCase {
 
     public GastoRepoImpl() {
-        super(RESTHandler.restTemplate(), GastoDomain.class, RESTHandler.urlActualREST() + GASTOS_GASTOS_GENERAL_PATH);
+        super(GastoDomain.class, RESTHandler.urlActualREST() + GASTOS_GASTOS_GENERAL_PATH);
+    }
+
+    @Override
+    protected RestOperations template() {
+        return RESTHandler.OAuth2RestTemplate();
     }
 
     @Override
     public HashMap<TipoGastoDomain, BigDecimal> reporteGastadoPorGasto() throws Exception {
-        return (HashMap<TipoGastoDomain, BigDecimal>) RestTemplateUtils.getForMap(template, urlGeneral + GASTO_REPORTE_POR_TIPO_PATH, TipoGastoDomain.class, BigDecimal.class);
+        return (HashMap<TipoGastoDomain, BigDecimal>) RestTemplateUtils.getForMap(template(), urlGeneral + GASTO_REPORTE_POR_TIPO_PATH, TipoGastoDomain.class, BigDecimal.class);
         //return null;
     }
 
     public List<Integer> findAllPending() throws Exception {
-        return RestTemplateUtils.getForList(template, urlGeneral, Integer.class);
+        return RestTemplateUtils.getForList(template(), urlGeneral, Integer.class);
     }
 
 }
