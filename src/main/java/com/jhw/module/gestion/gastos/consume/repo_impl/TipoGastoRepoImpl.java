@@ -10,6 +10,7 @@ import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.core.usecase_def.TipoGastoUseCase;
 import com.jhw.module.util.rest_config.services.RESTHandler;
 import com.jhw.utils.spring.client.ConsumerRepoTemplate;
+import org.springframework.web.client.RestOperations;
 
 /**
  *
@@ -18,6 +19,11 @@ import com.jhw.utils.spring.client.ConsumerRepoTemplate;
 public class TipoGastoRepoImpl extends ConsumerRepoTemplate<TipoGastoDomain> implements TipoGastoUseCase {
 
     public TipoGastoRepoImpl() {
-        super(RESTHandler.restTemplate(), TipoGastoDomain.class, RESTHandler.urlActualREST() + TIPO_GASTO_GENERAL_PATH);
+        super(TipoGastoDomain.class, RESTHandler.urlActualREST() + TIPO_GASTO_GENERAL_PATH);
+    }
+
+    @Override
+    protected RestOperations template() {
+        return RESTHandler.OAuth2RestTemplate();
     }
 }
