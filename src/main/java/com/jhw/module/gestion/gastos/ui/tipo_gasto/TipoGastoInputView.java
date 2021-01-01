@@ -1,7 +1,7 @@
 package com.jhw.module.gestion.gastos.ui.tipo_gasto;
 
-import com.jhw.module.gestion.contabilidad.ui.forma_pago.FormaPagoICBS;
-import com.jhw.module.gestion.contabilidad.ui.tipo_operacion.TipoOperacionContableICBS;
+import com.root101.module.gestion.contabilidad.ui.forma_pago.FormaPagoICBS;
+import com.root101.module.gestion.contabilidad.ui.tipo_operacion.TipoOperacionContableICBS;
 import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
@@ -41,7 +41,7 @@ public class TipoGastoInputView extends CleanCRUDInputView<TipoGastoDomain> {
         textFieldNombre.setHint("Nombre del gasto");
         textFieldNombre.setIcon(MaterialIcons.PRIORITY_HIGH);
 
-        monedaICBS = new com.jhw.module.gestion.contabilidad.ui.moneda.MonedaICBS();
+        monedaICBS = new com.root101.module.gestion.contabilidad.ui.moneda.MonedaICBS();
         monedaICBS.setLabel("Moneda por defecto");
         monedaICBS.setIcon(MaterialIcons.ATTACH_MONEY);
 
@@ -64,7 +64,7 @@ public class TipoGastoInputView extends CleanCRUDInputView<TipoGastoDomain> {
 
     // Variables declaration - do not modify
     private MaterialTextFieldIcon textFieldNombre;
-    private com.jhw.module.gestion.contabilidad.ui.moneda.MonedaICBS monedaICBS;
+    private com.root101.module.gestion.contabilidad.ui.moneda.MonedaICBS monedaICBS;
     private TipoOperacionContableICBS tipoOpICBS;
     private FormaPagoICBS formaPagoICBS;
     private MaterialTextArea textAreaDescripcion;

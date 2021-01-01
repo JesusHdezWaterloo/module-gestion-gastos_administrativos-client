@@ -2,7 +2,7 @@ package com.jhw.module.gestion.gastos.ui;
 
 import com.jhw.module.gestion.gastos.ui.gasto.GastoDetailView;
 import com.jhw.module.gestion.gastos.ui.tipo_gasto.TipoGastoDetailView;
-import com.jhw.utils.interfaces.Update;
+import com.root101.utils.interfaces.Update;
 import com.jhw.swing.material.components.container.panel._PanelTransparent;
 import java.awt.BorderLayout;
 

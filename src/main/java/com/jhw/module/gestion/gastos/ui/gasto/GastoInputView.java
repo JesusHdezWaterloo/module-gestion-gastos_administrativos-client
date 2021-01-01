@@ -1,12 +1,12 @@
 package com.jhw.module.gestion.gastos.ui.gasto;
 
-import com.jhw.module.gestion.contabilidad.core.domain.facade.CuadreUI;
-import com.jhw.module.gestion.contabilidad.core.domain.facade.DocNombreUI;
-import com.jhw.module.gestion.contabilidad.core.domain.facade.FechaDescUI;
-import com.jhw.module.gestion.contabilidad.core.domain.facade.OperacionCuadreUI;
-import com.jhw.module.gestion.contabilidad.ui.cuadre.pedazos.DocNombreInputView;
-import com.jhw.module.gestion.contabilidad.ui.cuadre.pedazos.FechaDescInputView;
-import com.jhw.module.gestion.contabilidad.ui.cuadre.pedazos.OperacionCuadreInputView;
+import com.root101.module.gestion.contabilidad.core.domain.facade.CuadreUI;
+import com.root101.module.gestion.contabilidad.core.domain.facade.DocNombreUI;
+import com.root101.module.gestion.contabilidad.core.domain.facade.FechaDescUI;
+import com.root101.module.gestion.contabilidad.core.domain.facade.OperacionCuadreUI;
+import com.root101.module.gestion.contabilidad.ui.cuadre.pedazos.DocNombreInputView;
+import com.root101.module.gestion.contabilidad.ui.cuadre.pedazos.FechaDescInputView;
+import com.root101.module.gestion.contabilidad.ui.cuadre.pedazos.OperacionCuadreInputView;
 import com.jhw.module.gestion.gastos.core.domain.GastoDomain;
 import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;

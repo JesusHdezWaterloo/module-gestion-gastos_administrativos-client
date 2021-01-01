@@ -1,9 +1,9 @@
 package com.jhw.module.gestion.gastos.ui.module;
 
-import com.clean.swing.app.AbstractSwingApplication;
-import com.clean.swing.app.DefaultAbstractSwingMainModule;
-import com.clean.swing.app.dashboard.DashBoardSimple;
-import com.clean.swing.app.dashboard.DashboardConstants;
+import com.root101.clean.swing.app.AbstractSwingApplication;
+import com.root101.clean.swing.app.DefaultAbstractSwingMainModule;
+import com.root101.clean.swing.app.dashboard.DashBoardSimple;
+import com.root101.clean.swing.app.dashboard.DashboardConstants;
 import com.jhw.module.gestion.gastos.consume.module.GastosConsumeCoreModule;
 import com.jhw.module.gestion.gastos.consume.usecase_def.*;
 import com.jhw.module.gestion.gastos.service.ResourceServiceClientImplementation;

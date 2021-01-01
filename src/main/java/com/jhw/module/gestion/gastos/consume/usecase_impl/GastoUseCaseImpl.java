@@ -5,7 +5,7 @@
  */
 package com.jhw.module.gestion.gastos.consume.usecase_impl;
 
-import com.clean.core.app.usecase.*;
+import com.root101.clean.core.app.usecase.DefaultCRUDUseCase;
 import com.jhw.module.gestion.gastos.consume.module.GastosConsumeCoreModule;
 import com.jhw.module.gestion.gastos.consume.repo_impl.*;
 import com.jhw.module.gestion.gastos.consume.usecase_def.*;
