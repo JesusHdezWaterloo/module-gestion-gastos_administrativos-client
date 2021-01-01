@@ -4,7 +4,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import com.jhw.module.gestion.gastos.consume.usecase_def.*;
 import com.jhw.module.gestion.gastos.consume.usecase_impl.*;
-import com.jhw.module.gestion.gastos.core.usecase_def.*;
+import com.root101.module.gestion.gastos.core.usecase_def.*;
 
 /**
  * Configuracion del injection del modulo de PlanTrabajo-consume-core.

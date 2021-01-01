@@ -7,8 +7,8 @@ import com.root101.module.gestion.contabilidad.core.domain.facade.OperacionCuadr
 import com.root101.module.gestion.contabilidad.ui.cuadre.pedazos.DocNombreInputView;
 import com.root101.module.gestion.contabilidad.ui.cuadre.pedazos.FechaDescInputView;
 import com.root101.module.gestion.contabilidad.ui.cuadre.pedazos.OperacionCuadreInputView;
-import com.jhw.module.gestion.gastos.core.domain.GastoDomain;
-import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
+import com.root101.module.gestion.gastos.core.domain.GastoDomain;
+import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;
 import com.jhw.module.gestion.gastos.ui.tipo_gasto.TipoGastoICBS;
 import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;

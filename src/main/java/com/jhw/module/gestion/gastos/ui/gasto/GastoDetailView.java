@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import com.jhw.swing.material.components.table.Column;
 import com.jhw.swing.material.components.table.editors_renders.money.MoneyCellRender;
 import com.jhw.swing.material.components.table.editors_renders.money.MoneyTableComponent;
-import com.jhw.module.gestion.gastos.core.domain.GastoDomain;
+import com.root101.module.gestion.gastos.core.domain.GastoDomain;
 import com.jhw.module.gestion.gastos.ui.module.GastoModuleNavigator;
 import com.jhw.module.gestion.gastos.ui.report.chart.GastosReport;
 import com.jhw.module.gestion.gastos.ui.report.export.GastoExport;

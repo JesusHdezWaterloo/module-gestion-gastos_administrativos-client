@@ -5,7 +5,7 @@ import com.jaga.swing.chart._MaterialBarChart;
 import com.root101.utils.interfaces.Update;
 import com.jhw.swing.material.standards.MaterialColors;
 import com.root101.module.gestion.contabilidad.utils.MonedaHandler;
-import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
+import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;
 import java.math.BigDecimal;
 import java.util.HashMap;

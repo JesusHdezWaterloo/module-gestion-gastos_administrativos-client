@@ -9,7 +9,7 @@ import com.root101.clean.core.app.usecase.DefaultCRUDUseCase;
 import com.jhw.module.gestion.gastos.consume.module.GastosConsumeCoreModule;
 import com.jhw.module.gestion.gastos.consume.repo_impl.*;
 import com.jhw.module.gestion.gastos.consume.usecase_def.*;
-import com.jhw.module.gestion.gastos.core.domain.*;
+import com.root101.module.gestion.gastos.core.domain.*;
 
 /**
  *

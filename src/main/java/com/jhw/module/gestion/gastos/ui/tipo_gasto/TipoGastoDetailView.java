@@ -1,7 +1,7 @@
 package com.jhw.module.gestion.gastos.ui.tipo_gasto;
 
 import com.root101.clean.core.app.services.ExceptionHandler;
-import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
+import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.jhw.module.gestion.gastos.ui.module.GastoSwingModule;
 import com.jhw.swing.models.detail._MaterialPanelDetail;
 import com.jhw.swing.material.components.table.Column;

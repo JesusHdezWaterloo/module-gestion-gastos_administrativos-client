@@ -5,9 +5,9 @@
  */
 package com.jhw.module.gestion.gastos.consume.repo_impl;
 
-import static com.jhw.module.gestion.gastos.core.ModuleGestionGastosConstants.*;
-import com.jhw.module.gestion.gastos.core.domain.TipoGastoDomain;
-import com.jhw.module.gestion.gastos.core.usecase_def.TipoGastoUseCase;
+import static com.root101.module.gestion.gastos.core.ModuleGestionGastosConstants.*;
+import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
+import com.root101.module.gestion.gastos.core.usecase_def.TipoGastoUseCase;
 import com.jhw.module.util.rest_config.services.RESTHandler;
 import com.jhw.utils.spring.client.ConsumerRepoTemplate;
 import org.springframework.web.client.RestOperations;
