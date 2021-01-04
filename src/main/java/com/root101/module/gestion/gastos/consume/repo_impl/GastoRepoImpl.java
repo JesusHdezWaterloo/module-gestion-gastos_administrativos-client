@@ -16,7 +16,7 @@
  */
 package com.root101.module.gestion.gastos.consume.repo_impl;
 
-import static com.root101.module.gestion.gastos.core.ModuleGestionGastosConstants.*;
+import static com.root101.module.gestion.gastos.rest.ModuleGestionGastosRESTConstants.*;
 import com.root101.module.gestion.gastos.core.domain.GastoDomain;
 import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.root101.module.gestion.gastos.core.usecase_def.GastoUseCase;
