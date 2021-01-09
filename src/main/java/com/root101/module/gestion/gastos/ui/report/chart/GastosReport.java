@@ -16,7 +16,7 @@
  */
 package com.root101.module.gestion.gastos.ui.report.chart;
 
-import com.jhw.swing.bundles.dialog.DialogPanel;
+import com.root101.swing.bundles.dialog.DialogPanel;
 
 /**
  *
