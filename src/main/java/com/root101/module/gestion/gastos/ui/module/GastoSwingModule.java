@@ -24,7 +24,7 @@ import com.root101.module.gestion.gastos.service.ResourceServiceImplementation;
 import com.root101.module.gestion.gastos.consume.module.GastosConsumeCoreModule;
 import com.root101.module.gestion.gastos.service.ResourceServiceClientImplementation;
 import com.root101.module.gestion.gastos.ui.GastosMainPanel;
-import com.jhw.swing.material.components.taskpane.SingleCollapseMenu;
+import com.root101.swing.material.components.taskpane.SingleCollapseMenu;
 import com.root101.module.gestion.gastos.consume.usecase_def.*;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;

@@ -17,9 +17,9 @@
 package com.root101.module.gestion.gastos;
 
 import com.root101.module.gestion.gastos.ui.module.GastoSwingModule;
-import com.jhw.module.util.default_config.DefaultConfigSwingModule;
-import com.jhw.module.util.personalization.ui.module.PersonalizationSwingModule;
-import com.jhw.swing.ui.MaterialLookAndFeel;
+import com.root101.module.util.default_config.DefaultConfigSwingModule;
+import com.root101.module.util.personalization.ui.module.PersonalizationSwingModule;
+import com.root101.swing.ui.MaterialLookAndFeel;
 import javax.swing.UIManager;
 
 /**

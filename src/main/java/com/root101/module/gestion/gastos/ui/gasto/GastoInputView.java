@@ -27,8 +27,8 @@ import com.root101.module.gestion.gastos.core.domain.GastoDomain;
 import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.root101.module.gestion.gastos.ui.module.GastoSwingModule;
 import com.root101.module.gestion.gastos.ui.tipo_gasto.TipoGastoICBS;
-import com.jhw.swing.material.components.container.layout.VerticalLayoutContainer;
-import com.jhw.swing.models.clean.CleanCRUDInputView;
+import com.root101.swing.material.components.container.layout.VerticalLayoutContainer;
+import com.root101.swing.models.clean.CleanCRUDInputView;
 import java.time.LocalDate;
 
 /**

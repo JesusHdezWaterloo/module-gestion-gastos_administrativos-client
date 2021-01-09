@@ -19,7 +19,7 @@ package com.root101.module.gestion.gastos.ui.report.chart;
 import com.root101.clean.core.app.services.ExceptionHandler;
 import com.jaga.swing.chart._MaterialBarChart;
 import com.root101.utils.interfaces.Update;
-import com.jhw.swing.material.standards.MaterialColors;
+import com.root101.swing.material.standards.MaterialColors;
 import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.root101.module.gestion.gastos.ui.module.GastoSwingModule;
 import java.math.BigDecimal;
