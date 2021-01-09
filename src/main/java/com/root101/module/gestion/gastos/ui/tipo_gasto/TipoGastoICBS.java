@@ -19,8 +19,8 @@ package com.root101.module.gestion.gastos.ui.tipo_gasto;
 import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.root101.module.gestion.gastos.ui.module.GastoModuleNavigator;
 import com.root101.module.gestion.gastos.ui.module.GastoSwingModule;
-import com.jhw.swing.models.input.icbs.InputComboBoxSelection;
-import com.jhw.swing.models.input.panels.ModelPanel;
+import com.root101.swing.models.input.icbs.InputComboBoxSelection;
+import com.root101.swing.models.input.panels.ModelPanel;
 import java.util.List;
 
 /**

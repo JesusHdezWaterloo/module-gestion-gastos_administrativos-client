@@ -16,11 +16,11 @@
  */
 package com.root101.module.gestion.gastos.ui.report.export;
 
-import com.jhw.utils.export.excel.ExcelListWriter;
+import com.root101.export.excel.ExcelListWriter;
 import com.root101.module.gestion.gastos.core.domain.GastoDomain;
 import com.root101.module.gestion.gastos.ui.gasto.GastoDetailView;
-import com.jhw.swing.material.components.table.editors_renders.money.MoneyTableComponent;
-import com.jhw.swing.models.utils.DefaultExportableConfig;
+import com.root101.swing.material.components.table.editors_renders.money.MoneyTableComponent;
+import com.root101.swing.models.utils.DefaultExportableConfig;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Workbook;
 

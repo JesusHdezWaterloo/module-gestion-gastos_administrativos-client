@@ -20,9 +20,9 @@ import static com.root101.module.gestion.gastos.rest.ModuleGestionGastosRESTCons
 import com.root101.module.gestion.gastos.core.domain.GastoDomain;
 import com.root101.module.gestion.gastos.core.domain.TipoGastoDomain;
 import com.root101.module.gestion.gastos.core.usecase_def.GastoUseCase;
-import com.jhw.module.util.rest_config.services.RESTHandler;
-import com.jhw.utils.spring.client.ConsumerRepoTemplate;
-import com.jhw.utils.spring.client.RestTemplateUtils;
+import com.root101.module.util.rest_config.services.RESTHandler;
+import com.root101.spring.client.ConsumerRepoTemplate;
+import com.root101.spring.client.RestTemplateUtils;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;

@@ -19,7 +19,7 @@ package com.root101.module.gestion.gastos.ui;
 import com.root101.module.gestion.gastos.ui.gasto.GastoDetailView;
 import com.root101.module.gestion.gastos.ui.tipo_gasto.TipoGastoDetailView;
 import com.root101.utils.interfaces.Update;
-import com.jhw.swing.material.components.container.panel._PanelTransparent;
+import com.root101.swing.material.components.container.panel._PanelTransparent;
 import java.awt.BorderLayout;
 
 /**
